@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
 # messenger.sh
 
+VERSION="1.0.0"
+
 # https://askubuntu.com/questions/558280/changing-colour-of-text-and-background-of-terminal
 # https://www.google.com/search?q=bash+colors+background+yellow
 
 
 test_messenger() {
+    printf "\n"
+
+    version
     printf "\n"
 
     success "Success Message" " SUCCESS "
@@ -47,6 +52,11 @@ test_messenger() {
     notice "Notice Message" " NOTICE "
     notice "Notice Message"
     printf "\n"
+}
+
+version() {
+    info "Bash Messenger v$VERSION"
+    warning "Crafted with love by Codedungeon"
 }
 
 success() {
