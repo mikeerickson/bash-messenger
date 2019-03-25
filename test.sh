@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-source messenger.sh
+source src/messenger.sh
 test_messenger
