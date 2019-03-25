@@ -10,6 +10,7 @@ test_messenger() {
 
     version
     printf "\n"
+    printf "\n"
 
     success "Success Message" " SUCCESS "
     success "Success Message"

@@ -17,6 +17,14 @@ Simple bash message routines for displaying consistent end user messages
       success "success message" "SUCCESS"
     ```
 
+### Messenger API
+
+Messenger API includes a suite of utility methods which becomes available to any bash scripts by simply sourcing the `messenger.sh` file
+
+```bash
+source messenger.sh
+```
+
 #### Messenger Signature
 
 All messenger methods use the same method signature as follows
@@ -38,7 +46,8 @@ success(msg:string, [label:string - optional])
 warn(msg:string, [label:string - optional])
 warning(msg:string, [label:string - optional])
 
-version() -> outputs module version
+Utilities:
+  version() -> outputs module version
 
 ### License
 
