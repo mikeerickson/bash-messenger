@@ -38,6 +38,8 @@ success(msg:string, [label:string - optional])
 warn(msg:string, [label:string - optional])
 warning(msg:string, [label:string - optional])
 
+version() -> outputs module version
+
 ### License
 
 Copyright &copy; 2019 Mike Erickson

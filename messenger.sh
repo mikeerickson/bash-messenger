@@ -3,8 +3,6 @@
 
 VERSION="1.0.0"
 
-# https://askubuntu.com/questions/558280/changing-colour-of-text-and-background-of-terminal
-# https://www.google.com/search?q=bash+colors+background+yellow
 
 
 test_messenger() {

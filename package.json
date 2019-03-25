@@ -1,13 +1,20 @@
 {
-  "name": "shell",
+  "name": "bash-messenger",
   "version": "1.0.0",
-  "description": "## Description",
-  "main": "index.js",
+  "description": "Bash end user status messages",
+  "main": "messenger.sh",
   "scripts": {
     "test": "echo \"Yah, we dont have tests...\" && exit 0",
     "pre-commit": "bash test.sh"
   },
-  "keywords": [],
+  "keywords": [
+    "codedungeon",
+    "bash",
+    "messenger",
+    "notification",
+    "status",
+    "message"
+  ],
   "author": "Mike Erickson <codedungeon@gmail.com> (https://github.com/mikeerickson)",
   "license": "MIT",
   "devDependencies": {
