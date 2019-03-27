@@ -4,6 +4,18 @@
 
 Simple bash message routines for displaying consistent end user messages
 
+![Screenshot](https://github.com/mikeerickson/bash-messenger/blob/master/docs/messenger-example.png)
+
+## Installation
+
+Using `curl` you can install the `bash-messenger` library
+
+- move to global directory where you wish to install library (I typically use `~/scripts`)
+
+- use the following `curl` command to install
+
+    `curl -o messenger.sh https://raw.githubusercontent.com/mikeerickson/bash-messenger/master/src/messenger.sh`
+
 ## Usage
 
 - Install where you wish to use with your bash scripts
@@ -13,7 +25,10 @@ Simple bash message routines for displaying consistent end user messages
 - Wherever you wish to execute on of the messenger methods
 
     ```shell
+      # standard message
       success "success message"
+
+      # message with label
       success "success message" "SUCCESS"
     ```
 
@@ -29,25 +44,41 @@ source messenger.sh
 
 All messenger methods use the same method signature as follows
 
-| Parameter | Type   | Description                                                                          |
-| --------- | ------ | ------------------------------------------------------------------------------------ |
-| message   | string | Desired message to display in console                                                |
-| label     | string | Optional label message, if supplied the label will appear first, followed by message |
+| Parameter        | Type   | Description                                                                          |
+| ---------------- | ------ | ------------------------------------------------------------------------------------ |
+| message          | string | Desired message to display in console                                                |
+| label [optional] | string | Optional label message, if supplied the label will appear first, followed by message |
 
 #### Messenger Methods
 
-error(msg:string, [label:string - optional])
-info(msg:string, [label:string - optional])
-log(msg:string, [label:string - optional])
-note(msg:string, [label:string - optional])
-notice(msg:string, [label:string - optional])
-status(msg:string, [label:string - optional])
-success(msg:string, [label:string - optional])
-warn(msg:string, [label:string - optional])
-warning(msg:string, [label:string - optional])
+**User Notification Messages**
 
-Utilities:
+```bash
+error(msg:string, [label:string])
+
+info(msg:string, [label:string])
+
+log(msg:string, [label:string])
+
+debug(msg:string, [label:string])
+
+note(msg:string, [label:string])
+
+notice(msg:string, [label:string])
+
+status(msg:string, [label:string])
+
+success(msg:string, [label:string])
+
+warn(msg:string, [label:string])
+
+warning(msg:string, [label:string])
+```
+
+**Utilities:**
+```
   version() -> outputs module version
+```
 
 ### License
 
